@@ -24,7 +24,9 @@ public class UsersContactResource {
 
 	@GetMapping(value = "/all")
 	public List<UsersContact> getUsersContact() {
+		System.out.println("AAA");
 		return usersContactRepository.findByUsers_Salary(5000);
+		
 		//return usersContactRepository.getUserContact(6000);
 		//return usersContactRepository.findAll();
 	}
