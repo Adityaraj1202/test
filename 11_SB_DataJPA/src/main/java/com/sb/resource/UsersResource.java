@@ -25,6 +25,7 @@ public class UsersResource {
 
     @GetMapping("/{name}")
     public List<Users> getUser(@PathVariable("name") final String name) {
+    	System.out.println("AAA");
         return usersRepository.findByName(name);
 
     }
