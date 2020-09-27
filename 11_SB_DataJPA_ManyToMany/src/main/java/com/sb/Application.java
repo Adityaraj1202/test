@@ -16,6 +16,7 @@ import java.util.List;
 public class Application {
 
     public static void main(String[] args) {
+    	System.out.println("1111");
         //SpringApplication.run(Application.class, args);
         ApplicationContext ctx=SpringApplication.run(Application.class, args);
         StudentRepository studentRepository=(StudentRepository) ctx.getBean("studentRepository");
